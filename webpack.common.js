@@ -46,6 +46,7 @@ module.exports = {
   },
   plugins: [
     new GenerateSW({
+      swDest: './service-worker.js',
       clientsClaim: true,
       skipWaiting: true,
       cleanupOutdatedCaches: true,
